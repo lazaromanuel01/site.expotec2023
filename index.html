@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Expotec</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            background-color: #ebebeb; 
+            position: relative;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav li:hover {
+            transform: scale(1.1);
+        }
+
+        .hero-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .welcome-section {
+            text-align: center;
+            flex-basis: 50%;
+            padding: 20px;
+        }
+        
+            .line {
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+        }
+
+        .banner {
+            flex-basis: 40%;
+        }
+
+        .banner a {
+            display: block;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .banner a:hover {
+            transform: scale(1.05);
+        }
+
+        .banner-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(231, 230, 230);   
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card,
+        .lecture {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 2px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #e4e3e3;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #252525;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #bebebe;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            max-width: 230px;
+            margin-right: 230px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="logo if.png" alt="Logo Expotec" class="logo">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Salas</a></li>
+                <li><a href="#palestras">Expotec 2022</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="hero-section">
+        <div class="welcome-section">
+            <h2>Bem-vindo ao site da Expotec</h2>
+            <p> A Expotec é um evento realizado pelos campi do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN) para divulgar projetos de ensino, pesquisa e extensão, submeter trabalhos científicos, ofertar palestras, oficinas e minicursos, bem como promover atividades artístico-culturais.</br>(clique na imagem para fazer as inscrições)</p>
+        </div>
+        <div class="banner">
+            <a href="https://www.survio.com/survey/d/E0N7Y5G2M9K8A4P3U">
+                <img src="IMG_1541.jpg" alt="Expotec Banner" class="banner-image" width="450">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Expotec. Todos os direitos reservados.</p>
+    </footer>
+
+    <center><section id="projetos" class="main-content">
+        <h2>Salas em Destaque</h2>
+        <div class="project-card">
+            <img src="expotecinfo23.jpeg" alt="Projeto 1" width="250">
+            <h3>Sala de Quimica</h3>
+            <p>Tema Hallowen</p></center>   
+        </div>
+        
+    </section>
+
+    <section id="palestras" class="main-content">
+        <h2>Expotec Anteriores</h2>
+        <div class="lecture">
+            <h3>Expotec 2022</h3>
+            <a href="expotec2017.html">
+                <img src="logoexpotec2022.png" alt="Expotec Banner" class="banner-image" width="320">
+            </a>
+            <p>De 13 a 15  de dezembro de 2022 ocorrerá...(clique para saber mais)</p>
+        </div>
+        
+    </section>
+
+    <section id="contato" class="main-content">
+        <h2>Entre em Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+</body>
+</html>

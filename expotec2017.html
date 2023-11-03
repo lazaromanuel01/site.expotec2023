@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expotec IFRN 2017</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 5px;
+            background-color: #ffffff  ;
+            color: rgb(0, 0, 0);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .photo-card {
+            border: 2px solid #000000;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #333;
+           
+        }
+
+        .photo-info {
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1px;
+            background-color: #ffffff;  
+            color: rgb(0, 0, 0);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        @media only screen and (max-width: 600px) {
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .photo-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Expotec IFRN 2022</h1>
+    </header>
+
+    <main>
+        <h2>Sobre o Evento</h2>
+        <p>De 13 a 15 de outubro de 2022 ocorreu no Campus Avançado Parelhas a I Exposição Científica, Tecnológica e Cultural do IFRN Parelhas, que na edição possui como tema central, Os Objetivos de Desenvolvimento Sustentável: Sintonizando para a construção de um mundo melhor, o qual foi norteado pelos 17 objetivos de desenvolvimento sustentável da ONU (ODS’s).</p>
+        <p>O evento, que é aberto ao público em geral, é uma mostra dos trabalhos produzidos por alunos e servidores nas áreas do ensino, pesquisa e extensão por meio de Palestras, Oficinas, Salas Temáticas, Mostra de Curtas e Atividades Culturais.</p>
+        <p>A realização do evento materializa a expectativa de um calendário de eventos anual com produção interna e a crescente participação da comunidade, aproximando-a às ações e atividades desenvolvidas no Campus.</p>
+        <p>As inscrições para a participação nas oficinas estão ocorrendo até o dia 21 de outubro por meio do site do evento, bem como as demais informações do evento e a programação completa.</p>
+
+        <section class="photo-grid">
+            <div class="photo-card">
+                <img src="espe1.jpeg" alt="Foto 1">
+                <div class="photo-info" width="10" >
+                    <p>SALA DE JOGOS</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="espe2.jpeg" alt="Foto 2">
+                <div class="photo-info">
+                    <p>SALA DE FISICA</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="espe3.jpeg" alt="Foto 3">
+                <div class="photo-info">
+                    <p>SALA DE FISICA</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="espe4.jpeg" alt="Foto 4">
+                <div class="photo-info">
+                    <p>SALA DE FISICA</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Expotec. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
